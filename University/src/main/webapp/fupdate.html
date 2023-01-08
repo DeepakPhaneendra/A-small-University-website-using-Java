@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #04AA6D;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<form action="fupdate.jsp" method="post">
+<CENTER>
+<body style="background-color:Beige;">
+<h1>UPDATE FACULTY DETAILS</h1><br><br>
+<button class="button" type="submit" name="submit" value="name" style="vertical-align:middle"><span>NAME </span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="button" type="submit" name="submit" value="dept" style="vertical-align:middle"><span>DEPARTMENT</span></button>
+<br><br><br><button class="button" type="submit" name="submit" value="deg" style="vertical-align:middle"><span>DESIGNATION</span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="button" type="submit" name="submit" value="gender" style="vertical-align:middle"><span>GENDER</span></button>
+<br><br><br><button class="button" type="submit" name="submit" value="sal" style="vertical-align:middle"><span>SALARY</span></button>
+
+</body>
+</CENTER>
+</form>
+</html>
+
+

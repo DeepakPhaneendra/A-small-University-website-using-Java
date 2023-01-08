@@ -1,0 +1,133 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<style>  
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #04AA6D;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: Beige ;  
+}  
+input[type=text] {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}    
+  
+input[type=text]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #04AA6D;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>  
+</head>  
+<body>  
+<form action="sregistration.jsp" method="post">  
+<div class="container">  
+<center>  <h1> Registration Form</h1> </center>  
+<hr>  
+<label> First Name: </label>   
+<input type="text" name="fname" required />   
+<label> Middle Name: </label>   
+<input type="text" name="mname" />   
+<label> Last Name: </label>   
+<input type="text" name="lname" required />   
+<label> Registration Number : </label>   
+<input type="text" name="roll" required />   
+<label> Contact Number : </label>    
+<input type="text" name="cno" required />   
+<div>  
+<label>   
+Department :  
+</label>     
+<input type="radio" id="name" name="dept" value="CSE"><label for="name">CSE</label>
+<input type="radio" id="name" name="dept" value="ECE"><label for="name">ECE</label>
+<input type="radio" id="name" name="dept" value="EEE"><label for="name">EEE</label>
+<input type="radio" id="name" name="dept" value="IT"><label for="name">IT</label>
+<input type="radio" id="name" name="dept" value="MECH"><label for="name">MECH</label>
+<input type="radio" id="name" name="dept" value="CIVIL"><label for="name">CIVIL</label>
+</div>  
+<div>  <br>
+<label> Choose Year of Study:</label>
+  <select name="year" id="year">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+<label>   <br><br><br>
+Gender :  
+</label>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+</div> <br><br> 
+<label>   <br>
+Select Your Quota :  
+</label>  
+<input type="radio" value="Convener" name="quota" checked > Convener 
+<input type="radio" value="Management" name="quota"> Management  
+ <br><br> 
+<label>   <br>
+Select Your Residence :  
+</label>  
+<input type="radio" value="Day Scholar" name="residence" checked > Day Scholar 
+<input type="radio" value="Hosteler" name="residence">   Hosteler
+ <br><br> 
+<button class="button" type="submit" name="submit" value="register" style="vertical-align:middle"><span>Register </span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  
+</form>  
+</body>    
+</html>  

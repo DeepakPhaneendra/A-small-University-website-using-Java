@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #04AA6D;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<form action="welcome.jsp" method="post">
+<CENTER>
+<body style="background-color:LavenderBlush;">
+<img src="https://img.freepik.com/premium-vector/university-icon-higher-education-symbol-buiding-exterior-isolated-white-background_176411-3701.jpg?w=2000" alt="University" width="1000" height="400">
+<h1>UNIVERSITY DATABASE</h1><br>
+<h2>SELECT YOUR ROLE</h2><br><br>
+<button class="button" type="submit" name="submit" value="Student" style="vertical-align:middle"><span>Student </span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="button" type="submit" name="submit" value="Faculty" style="vertical-align:middle"><span>Faculty </span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="button" type="submit" name="submit" value="Admin" style="vertical-align:middle"><span>Adminstrator </span></button>
+
+</body>
+</CENTER>
+</form>
+</html>
+
+
